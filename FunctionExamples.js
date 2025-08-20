@@ -16,14 +16,14 @@ var sum = addingNumbers(1,2); //sum = 3
 console.log("The value of sum, from the regular function is:"+sum);
 
 ✅ Use When:
-You want better stack traces in debugging.
-You need to reuse the function.
-You want to recursively call the function.
-You want the function to be hoisted (available before its declaration).
+    You want better stack traces in debugging.
+    You need to reuse the function.
+    You want to recursively call the function.
+    You want the function to be hoisted (available before its declaration).
 🔍 Pros:
-Easier to debug.
-Clearer intent.
-Can be hoisted.
+    Easier to debug.
+    Clearer intent.
+    Can be hoisted.
 
 
 
@@ -38,15 +38,15 @@ const addingNumbersAnonymousFunction = function(number1, number2){
 console.log("calling the function stored in addingNumbersAnonymousFunction  (anonymous function): "+addingNumbersAnonymousFunction(1,2));
 
 ✅ Use When:
-You’re passing a function as a callback.
-You don’t need to reuse or reference the function by name.
-You want to assign it to a variable or property.
+    You’re passing a function as a callback.
+    You don’t need to reuse or reference the function by name.
+    You want to assign it to a variable or property.
 🔍 Pros:
-Useful for inline logic.
-Keeps scope tight.
+    Useful for inline logic.
+    Keeps scope tight.
 ⚠️ Cons:
-Harder to debug (stack traces show "anonymous").
-Not hoisted.
+    Harder to debug (stack traces show "anonymous").
+    Not hoisted.
 
 
 
@@ -59,16 +59,16 @@ const addingNumbersArrowFunction = (number1, number2) => {
 console.log("calling the function stored in addingNumbersArrowFunction(arrow function): "+addingNumbersArrowFunction(1,2));
 
 ✅ Use When:
-You want concise syntax.
-You need to preserve this context (especially in React or class methods).
-You’re writing short, inline functions.
+    You want concise syntax.
+    You need to preserve this context (especially in React or class methods).
+    You’re writing short, inline functions.
 🔍 Pros:
-No this, arguments, or super binding — great for closures.
-Cleaner syntax for callbacks and functional programming.
+    No this, arguments, or super binding — great for closures.
+    Cleaner syntax for callbacks and functional programming.
 ⚠️ Cons:
-Not suitable for methods that rely on this.
-Not hoisted.
-Can be less readable in complex logic.
+    Not suitable for methods that rely on this.
+    Not hoisted.
+    Can be less readable in complex logic.
 
 
 
