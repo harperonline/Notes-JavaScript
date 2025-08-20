@@ -1,0 +1,14 @@
+Explainers:
+
+NPM - Node Package Manager
+    - Worlds bigest code repo npmjs.complex
+    - Used to install or initialise packages for use in a Node package or app
+    - Packages can be installed locally (within the app/package) or globally (available at system level)
+
+Commands available at: https://docs.npmjs.com/cli
+
+
+NPX - Node Package Execution
+    - Installs, runs and removes a package. Does not add it to package.json
+    - Good for one of operations like npx create-react-app <someappname>
+
