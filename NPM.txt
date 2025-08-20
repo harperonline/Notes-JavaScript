@@ -1,0 +1,29 @@
+Explainers:
+
+NPM - Node Package Manager
+    - Worlds bigest code repo npmjs.complex
+    - Used to install or initialise packages for use in a Node package or app
+    - Packages can be installed locally (within the app/package) or globally (available at system level)
+
+NPX - Node Package Execution
+    - Installs, runs and removes a package. Does not add it to package.json
+    - Good for one of operations like npx create-react-app <someappname>
+
+Commands available at: https://docs.npmjs.com/cli
+
+# npm ls :Lists all installed node packages within a package or app
+
+# npm ls -g  :Lists all installed node packages globally (system level)
+
+# npm <install | i> :Install a package at the path location you are at into dependancies in package.json. 
+                This creates package.json, package-lock.json and node_modules directory containing the installed packages
+
+# npm <install | i> --D  :Install a package at the path location you are at into devDependancies (dev use only) in package.json. 
+                This creates package.json, package-lock.json and node_modules directory containing the installed packages
+
+# npm <install | i> -g :Install a package globally. For example, 'npm install nodemon -g' installs the very good package and is available at command line 
+
+# npm <remove | rm> -g :Remove a package globally. For example, 'npm rm nodemon -g' Removes the very good package and is available at command line 
+
+# npm install package@version : Installs a package with a specific version
+
